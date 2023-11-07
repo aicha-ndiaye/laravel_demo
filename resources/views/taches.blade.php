@@ -39,21 +39,21 @@
     </nav>
     <div class="container">
         <div class="row">
-            @for($i=1; $i<8; $i++)
+            @foreach($taches as $tache)
             <div class="col -12 col-md-4 my-1">
                 <div class="card">
                     <div class="card-header">
-                        nom de la tache
+                        nom de la tache {{$tache->nom_tache}}
                     </div>
                     <div class="card-body ">
-                        <h5 class="card-title">description</h5>
+                        <h5 class="card-title">description </h5>
                         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                         <a href="#" class="btn btn-primary">voir liste des taches</a>
                     </div>
                 </div>
 
             </div>
-            @endfor
+            @endforeach
         </div>
     </div>
 
